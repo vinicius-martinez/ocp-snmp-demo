@@ -27,7 +27,7 @@ java -jar trap-receiver/target/trap-receiver.1.0.0-SNAPSHOT.jar
 ```
 Listening on 127.0.0.1/1062
 ```
-* by default we're running the server-side on 0.0.0.0:1062. If you need/want/desire to change these values, you need to upgrade* [Receiver Main Class](https://github.com/vinicius-martinez/ocp-snmp-demo/blob/master/trap-receiver/src/main/java/com/redhat/copel/snmp/receiver/Main.java)
+*by default we're running the server-side on 0.0.0.0:1062. If you need/want/desire to change these values, you need to upgrade* [Receiver Main Class](https://github.com/vinicius-martinez/ocp-snmp-demo/blob/master/trap-receiver/src/main/java/com/redhat/copel/snmp/receiver/Main.java)
 ```
 trapReceiver.listen(new UdpAddress("0.0.0.0/1062"));
 ```
@@ -36,7 +36,7 @@ trapReceiver.listen(new UdpAddress("0.0.0.0/1062"));
 ```
 java -jar trap-sender/target/trap-sender.1.0.0-SNAPSHOT.jar
 ```
-* by default we're connecting on server-side via 0.0.0.0:1062. If you need/want/desire to change these values, you need to upgrade* [Sender Main Class](https://github.com/vinicius-martinez/ocp-snmp-demo/blob/master/trap-sender/src/main/java/com/redhat/copel/snmp/sender/Main.java)
+*by default we're connecting on server-side via 0.0.0.0:1062. If you need/want/desire to change these values, you need to upgrade* [Sender Main Class](https://github.com/vinicius-martinez/ocp-snmp-demo/blob/master/trap-sender/src/main/java/com/redhat/copel/snmp/sender/Main.java)
 ```
 TrapSender sender = new TrapSender("192.168.64.12", 31942);
 ```
