@@ -20,11 +20,11 @@ public class TrapSender {
 	public static final String Oid = ".1.3.6.1.2.1.1.8";
 
 	// IP of Local Host
-	public static final String ipAddress = "0.0.0.0";
+	public static final String ipAddress = "localhost";
 
 	// Ideally Port 162 should be used to send receive Trap, any other available
 	// Port can be used
-	public static final int port = 162;
+	public static final int port = 1062;
 
 	public void sendTrap() {
 		try {

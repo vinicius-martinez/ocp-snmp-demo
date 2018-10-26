@@ -3,7 +3,6 @@ package com.redhat.copel.snmp.sender;
 public class Main {
 
 	public static void main(String[] args) {
-		
 		TrapSender sender = new TrapSender();
 		while (true) {
 			try {
@@ -15,7 +14,6 @@ public class Main {
 				e.printStackTrace();
 			}
 		}
-
 	}
 
 }
