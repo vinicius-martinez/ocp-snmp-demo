@@ -7,8 +7,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		TrapReceiver trapReceiver = new TrapReceiver();
+		String receiverIp = System.getenv("TRAP_RECEIVER_SERVICE_HOST");
 		try {
-			trapReceiver.listen(new UdpAddress("0.0.0.0/162"));
+			trapReceiver.listen(new UdpAddress(receiverIp + "/162"));
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
