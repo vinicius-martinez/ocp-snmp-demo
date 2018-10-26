@@ -105,9 +105,9 @@ Variables = [1.3.6.1.2.1.1.3.0 = Fri Oct 26 18:34:07 BRST 2018, 1.3.6.1.6.3.1.1.
 
 ## Further Reading
 
-[CDK/Minishift Documentation](https://developers.redhat.com/products/cdk/docs-and-apis/)
-
 [CDK/Minishift Download](https://developers.redhat.com/products/cdk/download/)
+
+[CDK/Minishift Documentation](https://developers.redhat.com/products/cdk/docs-and-apis/)
 
 [CDK/Minishift NodePort](https://access.redhat.com/documentation/en-us/red_hat_container_development_kit/3.6/html-single/getting_started_guide/#nodeport-services)
 
