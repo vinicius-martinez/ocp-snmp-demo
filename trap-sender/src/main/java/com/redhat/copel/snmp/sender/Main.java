@@ -3,7 +3,7 @@ package com.redhat.copel.snmp.sender;
 public class Main {
 
 	public static void main(String[] args) {
-		TrapSender sender = new TrapSender();
+		TrapSender sender = new TrapSender("192.168.64.12", 31258);
 		while (true) {
 			try {
 				sender.sendTrap();
