@@ -5,7 +5,7 @@ This is a simple demo showcasing Openshift NodePort feature to enable consuming 
 ## Environment
 
 - Openshift 3.10
-- [CDK v3.6.0-1] (https://developers.redhat.com/products/cdk/overview/)
+- [Container Development Kit 3.6](https://developers.redhat.com/products/cdk/overview/)
 - Java 1.8
 
 ## Deploy @ Localhost
@@ -78,11 +78,11 @@ ports:
     targetPort: 1062
   selector:
 ```
-- Update your *Trap-Sender* client with the Node IP and *NodePort* values. Example:
+- Update your *Trap-Sender* [Sender Main Class](https://github.com/vinicius-martinez/ocp-snmp-demo/blob/master/trap-sender/src/main/java/com/redhat/copel/snmp/sender/Main.java) client with the Node IP and *NodePort* values. Example:
 ```
 TrapSender sender = new TrapSender("192.168.64.12", 31942);
 ```
-- Finally check your *Trap-Sender Pod* is displaing the following output:
+- Finally if your *Trap-Sender Pod* is displaying the following output:
 ```
 oc get pods
 NAME                    READY     STATUS      RESTARTS   AGE
