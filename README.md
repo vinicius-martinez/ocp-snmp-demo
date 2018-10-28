@@ -38,7 +38,7 @@ java -jar trap-sender/target/trap-sender.1.0.0-SNAPSHOT.jar
 ```
 *by default we're connecting on server-side via 127.0.0.1:1062. If you need/want/desire to change these values, you need to upgrade* [Sender Main Class](https://github.com/vinicius-martinez/ocp-snmp-demo/blob/master/trap-sender/src/main/java/com/redhat/copel/snmp/sender/Main.java)
 ```
-TrapSender sender = new TrapSender("192.168.64.12", 31942);
+TrapSender sender = new TrapSender("127.0.0.1", 1062);
 ```
 - The following output is expected:
 ```
