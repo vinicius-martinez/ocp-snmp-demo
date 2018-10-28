@@ -55,7 +55,7 @@ Variables = [1.3.6.1.2.1.1.3.0 = Fri Oct 26 17:49:16 BRST 2018, 1.3.6.1.6.3.1.1.
 
 - Log on Openshift/Minishift:
 ```
-oc login -u developer -p developer [minishift:ip]:[minishift:port]
+oc login -u developer -p developer [minishift_ip]:[minishift_port]
 ```
 - Build *Trap-Receiver* on Openshift/Minishift:
 ```
