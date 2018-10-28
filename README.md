@@ -73,7 +73,7 @@ oc delete svc ocp-snmp-demo
 ```
 oc expose dc ocp-snmp-demo --type=LoadBalancer --name=ocp-snmp-demo-ingress --protocol="UDP" --port=1062
 ```
-*notice that we're exposing port 1062 which is the default port used by snmp-trap receiver.Thus, if you change it don't forget to update this expose with the correct one*
+*notice that we're exposing port 1062 which is the default port used by snmp-trap receiver.Thus, if you change it don't forget to update this command with the correct one*
 - Take note of the *NodePort* by running:
 ```
 oc export svc ocp-snmp-demo-ingress
@@ -89,7 +89,7 @@ ports:
 ```
 TrapSender sender = new TrapSender("192.168.64.12", 31942);
 ```
-- Finally if your *Trap-Sender Pod* is displaying the following output:
+- Check if your *Trap-Sender Pod* is displaying the following output:
 ```
 oc get pods
 NAME                    READY     STATUS      RESTARTS   AGE
